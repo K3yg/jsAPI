@@ -1,3 +1,4 @@
+const Cliente = require('../models/clientes');
 module.exports = app => {
 
 
@@ -7,7 +8,9 @@ app.get('/clientes', (req, res) => {
 
 
 app.post('/clientes', (req, res) => {
-    res.send('salve2')
+    const cliente = req.body
+
+    Cliente.add(cliente)
 })
 
 

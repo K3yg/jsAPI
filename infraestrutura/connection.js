@@ -1,6 +1,6 @@
 const mysql = require('mysql')
 
-const conection = mysql.createConnection({
+const connection = mysql.createConnection({
     host: 'localhost',
     port: 3306,
     user: 'root',
@@ -8,4 +8,4 @@ const conection = mysql.createConnection({
     database: 'sistemaclientes'
 })
 
-module.exports = conection
+module.exports = connection
